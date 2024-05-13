@@ -1,0 +1,10 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+{
+	"name": "microsvc-charlie",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+	"runArgs": [ "--name=microsvc-charlie" ],
+	"workspaceFolder": "/workspace/microsvc-charlie",
+	"workspaceMount": "source=${localWorkspaceFolder}/microsvc-charlie,target=/workspace/microsvc-charlie,type=bind,consistency=cached"
+}

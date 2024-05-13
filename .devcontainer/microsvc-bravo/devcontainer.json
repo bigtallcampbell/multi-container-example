@@ -1,0 +1,10 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+{
+	"name": "microsvc-bravo",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+	"runArgs": [ "--name=microsvc-bravo" ],
+	"workspaceFolder": "/workspace/microsvc-bravo",
+	"workspaceMount": "source=${localWorkspaceFolder}/microsvc-bravo,target=/workspace/microsvc-bravo,type=bind,consistency=cached"
+}
